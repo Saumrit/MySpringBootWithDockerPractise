@@ -1,11 +1,9 @@
 spring:
-  profiles.active: local
+#  profiles.active: local
   data:
     mongodb:
-#      uri: mongodb://localhost:27017/myone
-#      host: localhost
-#      port: 27017
-#      database: myone
+      uri: mongodb://host.docker.internal:27017/mySpringBootPractise
+
 management:
   endpoints:
     web:
