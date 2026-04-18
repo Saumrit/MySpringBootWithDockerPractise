@@ -9,10 +9,9 @@ public class SwaggerConfiguration {
 
     public OpenAPI MySpringBootSwaggerDemo(){
         return new OpenAPI()
-                .info(new Info().title("Sample Programme for Swagger configuration with SpringBoot")
-                        .description("It is a demo project to show Swagger configuration with SpringBoot "+
-                                "where entire Configuration of OPEN API Swagger is used to display documentation " +
-                                "for exposed APIs by my Controller and it's documentation"));
+                .info(new Info().title("Sample Programme for SpringBoot as Docker Container")
+                        .description("It is a demo project to show SpringBoot App running as Docker COntainer and communucating " +
+                                "with MongoDB hosted In localhost"));
 
     }
 }

@@ -1,2 +1,1 @@
-# MySpringBootPractiseWithMongoDB
-Project for Spring-Boot with MongoDb using JPA and MongoTemplate
+# DEMO-PROJECT-SpringBootApp As DockerContainer
