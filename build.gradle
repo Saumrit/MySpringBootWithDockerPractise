@@ -5,8 +5,8 @@ plugins {
 }
 
 group = 'com.saumrit'
-version = '1.0.0'
-description = 'Demo project for Spring Boot with Swagger UI'
+version = '3.0.0'
+description = 'Demo project for Spring Boot with Swagger UI And AWS With MongoDB Atlas'
 
 java {
 	toolchain {

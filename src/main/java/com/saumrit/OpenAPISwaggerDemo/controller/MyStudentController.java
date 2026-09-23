@@ -8,6 +8,8 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.List;
 
 @RestController
@@ -89,6 +91,18 @@ public class MyStudentController {
             @ApiResponse(responseCode = "500",description = "Internal Server Error") })
     public StudentDTO patchUpdateSingleStudent(@RequestBody StudentDTO studentDTO){
         return myStudentService.updateSingleStudent(studentDTO);
+    }
+
+    @Operation(summary = "Dummy API",
+            description = "Dummy API")
+    @GetMapping("/dummy")
+    @ResponseStatus(HttpStatus.OK)
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200",description = "Success"),
+            @ApiResponse(responseCode = "400",description = "Bad Request"),
+            @ApiResponse(responseCode = "500",description = "Internal Server Error") })
+    public String getTheCount(){
+        return "Hi Saumrit !! Current time is: "+LocalDateTime.now(ZoneId.of("Asia/Kolkata"));
     }
 
 
